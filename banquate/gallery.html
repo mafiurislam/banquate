@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Bou Thakurani Banquet Kolkata</title>
+  <meta name="description" content="Browse our luxury gallery of wedding stages, floral decor, lighting setups, and real events hosted at Bou Thakurani Banquet in Madhyamgram, Kolkata.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- GLightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/images/logo.png" alt="Bou Thakurani Banquet Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="header-nav sticky" id="mainHeader">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" id="navBrandLogo">
+          <img src="assets/images/logo.png" alt="Bou Thakurani Banquet Logo">
+          <div class="ms-3 d-none d-sm-block">
+            <span class="d-block h5 mb-0 text-white font-heading" style="letter-spacing: 1px;">বৌ ঠাকুরাণী</span>
+            <span class="d-block small text-uppercase text-gold" style="color: var(--primary-gold); letter-spacing: 2px; font-size: 0.75rem;">BANQUET</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" id="mobileMenuBtn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html" id="linkHome">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" id="linkAbout">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html" id="linkServices">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html" id="linkGallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" id="linkContact">Contact</a></li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <button class="btn btn-gold ripple" data-bs-toggle="modal" data-bs-target="#bookingModal" id="btnHeaderBook">Book Now</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1920');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <h1 class="display-3 font-heading text-white mb-2" data-aos="fade-down">Media Gallery</h1>
+      <ul class="breadcrumb-gold justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Gallery</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-5" id="gallerySection">
+    <div class="container my-md-4">
+      <div class="section-title-container">
+        <span class="section-subtitle">Real Celebrations</span>
+        <h2 class="section-title">Our Event Showcase</h2>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs" data-aos="fade-up">
+        <button class="filter-tab-btn active" data-filter="all">All Photos</button>
+        <button class="filter-tab-btn" data-filter="wedding">Wedding</button>
+        <button class="filter-tab-btn" data-filter="reception">Reception</button>
+        <button class="filter-tab-btn" data-filter="birthday">Birthday</button>
+        <button class="filter-tab-btn" data-filter="decoration">Decoration</button>
+        <button class="filter-tab-btn" data-filter="hall">Hall</button>
+        <button class="filter-tab-btn" data-filter="catering">Catering</button>
+        <button class="filter-tab-btn" data-filter="stage">Stage</button>
+        <button class="filter-tab-btn" data-filter="lighting">Lighting</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4" id="galleryGrid" data-aos="fade-up" data-aos-delay="200">
+        
+        <!-- Image 1: Wedding Unsplash -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item wedding stage decoration">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800" alt="Wedding Stage Floral decoration" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=1200" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Royal Wedding Stage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 2: Event1 (Cake feeding) -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item birthday hall">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="assets/images/event1.jpg" alt="Cake celebration at Bou Thakurani Banquet" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="assets/images/event1.jpg" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Birthday Celebration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 3: Reception Unsplash -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item reception hall catering">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=800" alt="Table Setting Reception" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1200" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Luxury Table Seating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 4: Event2 (Catering Stall) -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item catering wedding decoration">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="assets/images/event2.jpg" alt="Wedding catering counter" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="assets/images/event2.jpg" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Event Catering Setup</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 5: Decoration Unsplash -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item decoration stage wedding">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="https://images.unsplash.com/photo-1519225495810-7517c5a6907a?auto=format&fit=crop&q=80&w=800" alt="Exotic Floral setup" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="https://images.unsplash.com/photo-1519225495810-7517c5a6907a?auto=format&fit=crop&q=80&w=1200" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Exotic Flower Drapes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 6: Event3 (Birthday Backdrop) -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item birthday decoration stage">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="assets/images/event3.jpg" alt="Child birthday pose" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="assets/images/event3.jpg" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Themed Birthday Backdrop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 7: Hall Unsplash -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item hall reception">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&q=80&w=800" alt="Banquet Hall Interior" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&q=80&w=1200" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Pillarless Banquet Interior</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 8: Event4 (Pink dress dance) -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item birthday lighting hall">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="assets/images/event4.jpg" alt="Child dancing in pink dress" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="assets/images/event4.jpg" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Dance Celebration Lights</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 9: Lighting Unsplash -->
+        <div class="col-lg-4 col-md-6 gallery-grid-item lighting decoration wedding">
+          <div class="gallery-grid-item-container">
+            <div class="img-zoom-container rounded shadow">
+              <img src="https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?auto=format&fit=crop&q=80&w=800" alt="Exquisite canopy lights" class="img-fluid">
+            </div>
+            <div class="gallery-overlay">
+              <a href="https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?auto=format&fit=crop&q=80&w=1200" class="gallery-icon-link glightbox" data-gallery="event-gallery" aria-label="Zoom Image">
+                <i class="bi bi-zoom-in"></i>
+              </a>
+              <span class="text-white fw-bold">Exquisite Hanging Lights</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 text-white text-center position-relative" style="background-image: url('https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center;" id="bookingCta">
+    <div class="hero-overlay" style="background: rgba(123, 30, 59, 0.95);"></div>
+    <div class="container position-relative" style="z-index: 3;">
+      <h2 class="display-4 font-heading mb-3" data-aos="fade-up">Admired Our Elegant Celebrations?</h2>
+      <p class="lead mb-4 mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="200">Host your own milestone celebration at Kolkata's most beloved banquet. Secure your preferred dates before slots are taken.</p>
+      <button class="btn btn-gold btn-lg ripple" data-bs-toggle="modal" data-bs-target="#bookingModal" data-aos="zoom-in" data-aos-delay="400">Book Your Event Date</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-luxury text-white" id="mainFooter">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-4">
+          
+          <!-- Column 1: About -->
+          <div class="col-lg-3 col-md-6">
+            <img src="assets/images/logo.png" alt="Bou Thakurani Banquet Logo" class="footer-logo">
+            <p class="footer-desc">Bou Thakurani Banquet is a hallmark of premium celebration hosting in Madhyamgram, Kolkata. Elevate your milestones with us.</p>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=918100132378" class="social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 ms-lg-auto">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li>
+              <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="footer-heading">Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Wedding Halls</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Catering & Buffet</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Birthday Decor</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Corporate Seminars</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Lightings & Sound</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="footer-heading">Contact Info</h4>
+            <ul class="contact-info-list">
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>27 & 28, East Udayrajpur, Sisir Kunja, Madhyamgram, Kolkata - 700129, West Bengal</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <span>+91 81001 32378</span>
+              </li>
+              <li>
+                <i class="bi bi-whatsapp"></i>
+                <span>+91 81001 32378</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill"></i>
+                <span>bouthakuranibanquet@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Bou Thakurani Banquet. All rights reserved. Built with elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal fade booking-modal" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-heading" id="bookingModalLabel"><i class="bi bi-calendar-heart-fill me-2 text-gold"></i>Book Your Event</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label for="bookName" class="form-label fw-medium text-maroon">Your Name *</label>
+              <input type="text" class="form-control" id="bookName" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookPhone" class="form-label fw-medium text-maroon">Phone / WhatsApp Number *</label>
+              <input type="tel" class="form-control" id="bookPhone" placeholder="Enter 10-digit mobile number" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookEmail" class="form-label fw-medium text-maroon">Email Address</label>
+              <input type="email" class="form-control" id="bookEmail" placeholder="Enter email address">
+            </div>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label for="bookEvent" class="form-label fw-medium text-maroon">Event Category *</label>
+                <select class="form-select" id="bookEvent" required>
+                  <option value="" disabled selected>Select category</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Reception">Reception</option>
+                  <option value="Birthday Party">Birthday Party</option>
+                  <option value="Anniversary">Anniversary</option>
+                  <option value="Engagement">Engagement</option>
+                  <option value="Corporate Event">Corporate Event</option>
+                  <option value="Baby Shower">Baby Shower</option>
+                  <option value="Annaprashan">Rice Ceremony (Annaprashan)</option>
+                  <option value="Traditional Ritual">Haldi / Mehendi</option>
+                  <option value="Cultural Program">Cultural Program</option>
+                  <option value="Other">Other Social Gathering</option>
+                </select>
+              </div>
+              <div class="col-6 mb-3">
+                <label for="bookGuests" class="form-label fw-medium text-maroon">Guests Count</label>
+                <input type="number" class="form-control" id="bookGuests" min="20" max="1500" value="100">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="bookDate" class="form-label fw-medium text-maroon">Event Date *</label>
+              <input type="date" class="form-control" id="bookDate" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookMessage" class="form-label fw-medium text-maroon">Special Requirements</label>
+              <textarea class="form-control" id="bookMessage" rows="3" placeholder="Enter catering preferences, decor themes etc."></textarea>
+            </div>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-maroon w-100 ripple" id="btnModalSubmit">Send Booking Request</button>
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            <span class="small text-muted d-block mb-2">Or contact us directly on</span>
+            <a href="https://api.whatsapp.com/send?phone=918100132378&text=Hi%20Bou%20Thakurani%20Banquet%2C%20I%20would%20like%20to%20inquire%20about%20booking%20the%20hall%20for%20my%20event." class="btn btn-success rounded-pill px-4" target="_blank" style="background-color: #25D366; border-color: #25D366;">
+              <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Icon -->
+  <a href="https://api.whatsapp.com/send?phone=918100132378&text=Hi%20Bou%20Thakurani%20Banquet%2C%20I%20would%20like%20to%20inquire%20about%20booking%20the%20hall%20for%20my%20event." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Bou Thakurani Banquet Kolkata</title>
+  <meta name="description" content="Explore our 15 premium event services at Bou Thakurani Banquet. From luxury wedding hall bookings and catering to customized floral stages and LED lighting.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- GLightbox CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/images/logo.png" alt="Bou Thakurani Banquet Logo" class="loader-logo">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Sticky Navbar -->
+  <header class="header-nav sticky" id="mainHeader">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <a class="navbar-brand d-flex align-items-center" href="index.html" id="navBrandLogo">
+          <img src="assets/images/logo.png" alt="Bou Thakurani Banquet Logo">
+          <div class="ms-3 d-none d-sm-block">
+            <span class="d-block h5 mb-0 text-white font-heading" style="letter-spacing: 1px;">বৌ ঠাকুরাণী</span>
+            <span class="d-block small text-uppercase text-gold" style="color: var(--primary-gold); letter-spacing: 2px; font-size: 0.75rem;">BANQUET</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" id="mobileMenuBtn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html" id="linkHome">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" id="linkAbout">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html" id="linkServices">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html" id="linkGallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" id="linkContact">Contact</a></li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <button class="btn btn-gold ripple" data-bs-toggle="modal" data-bs-target="#bookingModal" id="btnHeaderBook">Book Now</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1920');">
+    <div class="page-banner-overlay"></div>
+    <div class="container page-banner-content">
+      <h1 class="display-3 font-heading text-white mb-2" data-aos="fade-down">Our Services</h1>
+      <ul class="breadcrumb-gold justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Services</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-5" id="servicesGridSection">
+    <div class="container my-md-4">
+      <div class="section-title-container">
+        <span class="section-subtitle">Exquisite Solutions</span>
+        <h2 class="section-title">What We Offer</h2>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- 1. Wedding -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" alt="Wedding Stage" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Wedding Hostings</h4>
+              <p class="text-muted small">Royally styled marriage hosting with central AC halls, bridal rooms, and red carpets.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Complete Stage Layout Setup</li>
+                <li><i class="bi bi-check-lg"></i> Luxury Bridal Changing Room</li>
+                <li><i class="bi bi-check-lg"></i> Expert Venue Coordinator</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹1,50,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Reception -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=600" alt="Wedding Reception Table Setting" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Wedding Receptions</h4>
+              <p class="text-muted small">Elegant setups with round-table layouts, lighting backdrops, and buffet systems.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Round Tables with Satin Covers</li>
+                <li><i class="bi bi-check-lg"></i> Central AC Comfort Control</li>
+                <li><i class="bi bi-check-lg"></i> Soft Instrumental Background Music</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹1,20,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Birthday -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="assets/images/event3.jpg" alt="Child Birthday Party" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Birthday Parties</h4>
+              <p class="text-muted small">Premium birthday celebrations with colorful balloon pillars, cartoon cutouts, and music.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Customized Themed Cake Table</li>
+                <li><i class="bi bi-check-lg"></i> Balloon Arch & Backdrops</li>
+                <li><i class="bi bi-check-lg"></i> Child Play Area Setup</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹45,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Anniversary -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=600" alt="Anniversary Event Setup" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Anniversary Celebrations</h4>
+              <p class="text-muted small">Reconnect with your memories with gorgeous floral decorations and slideshow projections.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> LED Slide Projection Display</li>
+                <li><i class="bi bi-check-lg"></i> Elegant Lighting Accents</li>
+                <li><i class="bi bi-check-lg"></i> Live Soft Vocalist arrangements</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹60,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Engagement -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=600" alt="Engagement Rings" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Engagement Ceremonies</h4>
+              <p class="text-muted small">Make your promise extra memorable with cozy ring-exchange stages and catering stalls.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Specialized Stage and Ring Cushions</li>
+                <li><i class="bi bi-check-lg"></i> Floral Entrance Archways</li>
+                <li><i class="bi bi-check-lg"></i> Photography Spot Decoration</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹70,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Baby Shower -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&q=80&w=600" alt="Baby Shower Decor Setup" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Baby Showers (Sadh)</h4>
+              <p class="text-muted small">Specialized traditional sitting sets and custom menus matching regional traditions.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Traditional Royal Seating Chairs</li>
+                <li><i class="bi bi-check-lg"></i> Light Pastel Theme Decoration</li>
+                <li><i class="bi bi-check-lg"></i> Clean restrooms for the mother</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹50,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Rice Ceremony -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&q=80&w=600" alt="Traditional Indian Ceremony" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Rice Ceremonies (Mukhe Bhaat)</h4>
+              <p class="text-muted small">Celebrate your baby's first solid food intake in a safe, hygienic AC hall.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Custom low-level floor seat styles</li>
+                <li><i class="bi bi-check-lg"></i> Puja Area Setup</li>
+                <li><i class="bi bi-check-lg"></i> Standard Buffet Plates integration</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹55,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Corporate Event -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=600" alt="Corporate Event Setup" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Corporate Seminars & Meets</h4>
+              <p class="text-muted small">Pillarless space for clean projector viewing, high-quality audio, and seating layouts.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> High-definition Projection Setups</li>
+                <li><i class="bi bi-check-lg"></i> Wireless Podium Mics & Acoustics</li>
+                <li><i class="bi bi-check-lg"></i> Tea & High-Coffee catering slots</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹90,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Decoration -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" alt="Exquisite Floral Decor" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Themed Venue Decoration</h4>
+              <p class="text-muted small">Design themes ranging from Royal Rajasthani palaces to modern floral drop curtains.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Choice of 15+ pre-designed themes</li>
+                <li><i class="bi bi-check-lg"></i> Custom fabric drapings</li>
+                <li><i class="bi bi-check-lg"></i> Entrance styling elements</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹35,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Catering -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=600" alt="Buffet Catering" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Elite Catering Solutions</h4>
+              <p class="text-muted small">Hygienic cooking teams preparing traditional Bengali fish dishes, kebabs, and mocktails.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Professional Uniformed Service Staff</li>
+                <li><i class="bi bi-check-lg"></i> Custom menu selections</li>
+                <li><i class="bi bi-check-lg"></i> Pure ingredients & high-standard kitchen</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹700 / Plate</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Photography -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600" alt="Camera Photography" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Professional Event Photography</h4>
+              <p class="text-muted small">Candid photography and cinematic wedding film coordination inside the venue.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Dedicated Indoor Photo Booths</li>
+                <li><i class="bi bi-check-lg"></i> Gimbal Cinematic Shoots</li>
+                <li><i class="bi bi-check-lg"></i> High-definition Photo Album delivery</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹40,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. DJ & Music -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600" alt="DJ Sound Mixer" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">DJ & Sound Systems</h4>
+              <p class="text-muted small">High-wattage bass mixers, professional DJs, and spacious dance floor setups.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Dual-Bass Pioneer Audio Mixers</li>
+                <li><i class="bi bi-check-lg"></i> Soundproof acoustics for clarity</li>
+                <li><i class="bi bi-check-lg"></i> Animated strobe dance floors</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹25,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Stage Decoration -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1549417229-aa67d3263c09?auto=format&fit=crop&q=80&w=600" alt="Banquet Stage Decor" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Stage Decoration</h4>
+              <p class="text-muted small">Grand customized platforms with royal sofas, curtains, and signature fiber pillars.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> High-Rise fiber stages</li>
+                <li><i class="bi bi-check-lg"></i> Custom velvet sofa sets</li>
+                <li><i class="bi bi-check-lg"></i> Golden side pillar stands</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹30,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Flower Decoration -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600" alt="Flower Decor" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Flower Decoration</h4>
+              <p class="text-muted small">Exotic local and imported flowers: marigolds, roses, orchids, and white jasmines.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Fresh flowers delivery guarantee</li>
+                <li><i class="bi bi-check-lg"></i> Floral drop walls</li>
+                <li><i class="bi bi-check-lg"></i> Scented mist integrations</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹25,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. Lighting -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-details-card">
+            <div class="img-zoom-container">
+              <img src="https://images.unsplash.com/photo-1478812954026-9c750f0e89fc?auto=format&fit=crop&q=80&w=600" alt="Event Lighting" class="w-100 object-fit-cover" style="height: 240px;">
+            </div>
+            <div class="service-card-body">
+              <h4 class="font-heading mb-2">Premium Lighting Systems</h4>
+              <p class="text-muted small">Smart LED light settings, drop string lights, neon letterings, and custom spotlights.</p>
+              <ul class="service-features-list">
+                <li><i class="bi bi-check-lg"></i> Smart mobile-controlled LED washes</li>
+                <li><i class="bi bi-check-lg"></i> Romantic yellow string drops</li>
+                <li><i class="bi bi-check-lg"></i> High-definition spot par cans</li>
+              </ul>
+              <div class="service-starting-price mt-auto">Starting from: <span>₹18,000</span></div>
+              <button class="btn btn-maroon w-100 mt-3 ripple" data-bs-toggle="modal" data-bs-target="#bookingModal">Inquire Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 text-white text-center position-relative" style="background-image: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center;" id="bookingCta">
+    <div class="hero-overlay" style="background: rgba(123, 30, 59, 0.95);"></div>
+    <div class="container position-relative" style="z-index: 3;">
+      <h2 class="display-4 font-heading mb-3" data-aos="fade-up">Have a Customized Celebration Plan?</h2>
+      <p class="lead mb-4 mx-auto" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="200">Talk to Subrata Mukherjee and our event coordinators. We build personalized menus and theme decors to suit your exact requirements.</p>
+      <button class="btn btn-gold btn-lg ripple" data-bs-toggle="modal" data-bs-target="#bookingModal" data-aos="zoom-in" data-aos-delay="400">Request Custom Pricing</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-luxury text-white" id="mainFooter">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row g-4">
+          
+          <!-- Column 1: About -->
+          <div class="col-lg-3 col-md-6">
+            <img src="assets/images/logo.png" alt="Bou Thakurani Banquet Logo" class="footer-logo">
+            <p class="footer-desc">Bou Thakurani Banquet is a hallmark of premium celebration hosting in Madhyamgram, Kolkata. Elevate your milestones with us.</p>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=918100132378" class="social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-lg-2 col-md-6 ms-lg-auto">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li>
+              <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="footer-heading">Our Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Wedding Halls</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Catering & Buffet</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Birthday Decor</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Corporate Seminars</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Lightings & Sound</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact -->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="footer-heading">Contact Info</h4>
+            <ul class="contact-info-list">
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>27 & 28, East Udayrajpur, Sisir Kunja, Madhyamgram, Kolkata - 700129, West Bengal</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <span>+91 81001 32378</span>
+              </li>
+              <li>
+                <i class="bi bi-whatsapp"></i>
+                <span>+91 81001 32378</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill"></i>
+                <span>bouthakuranibanquet@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Bou Thakurani Banquet. All rights reserved. Built with elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal fade booking-modal" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-heading" id="bookingModalLabel"><i class="bi bi-calendar-heart-fill me-2 text-gold"></i>Book Your Event</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label for="bookName" class="form-label fw-medium text-maroon">Your Name *</label>
+              <input type="text" class="form-control" id="bookName" placeholder="Enter your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookPhone" class="form-label fw-medium text-maroon">Phone / WhatsApp Number *</label>
+              <input type="tel" class="form-control" id="bookPhone" placeholder="Enter 10-digit mobile number" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookEmail" class="form-label fw-medium text-maroon">Email Address</label>
+              <input type="email" class="form-control" id="bookEmail" placeholder="Enter email address">
+            </div>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label for="bookEvent" class="form-label fw-medium text-maroon">Event Category *</label>
+                <select class="form-select" id="bookEvent" required>
+                  <option value="" disabled selected>Select category</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Reception">Reception</option>
+                  <option value="Birthday Party">Birthday Party</option>
+                  <option value="Anniversary">Anniversary</option>
+                  <option value="Engagement">Engagement</option>
+                  <option value="Corporate Event">Corporate Event</option>
+                  <option value="Baby Shower">Baby Shower</option>
+                  <option value="Annaprashan">Rice Ceremony (Annaprashan)</option>
+                  <option value="Traditional Ritual">Haldi / Mehendi</option>
+                  <option value="Cultural Program">Cultural Program</option>
+                  <option value="Other">Other Social Gathering</option>
+                </select>
+              </div>
+              <div class="col-6 mb-3">
+                <label for="bookGuests" class="form-label fw-medium text-maroon">Guests Count</label>
+                <input type="number" class="form-control" id="bookGuests" min="20" max="1500" value="100">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="bookDate" class="form-label fw-medium text-maroon">Event Date *</label>
+              <input type="date" class="form-control" id="bookDate" required>
+            </div>
+            <div class="mb-3">
+              <label for="bookMessage" class="form-label fw-medium text-maroon">Special Requirements</label>
+              <textarea class="form-control" id="bookMessage" rows="3" placeholder="Enter catering preferences, decor themes etc."></textarea>
+            </div>
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-maroon w-100 ripple" id="btnModalSubmit">Send Booking Request</button>
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            <span class="small text-muted d-block mb-2">Or contact us directly on</span>
+            <a href="https://api.whatsapp.com/send?phone=918100132378&text=Hi%20Bou%20Thakurani%20Banquet%2C%20I%20would%20like%20to%20inquire%20about%20booking%20the%20hall%20for%20my%20event." class="btn btn-success rounded-pill px-4" target="_blank" style="background-color: #25D366; border-color: #25D366;">
+              <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Icon -->
+  <a href="https://api.whatsapp.com/send?phone=918100132378&text=Hi%20Bou%20Thakurani%20Banquet%2C%20I%20would%20like%20to%20inquire%20about%20booking%20the%20hall%20for%20my%20event." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
