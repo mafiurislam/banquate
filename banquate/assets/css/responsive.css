@@ -1,0 +1,121 @@
+/* ==========================================================================
+   BOU THAKURANI BANQUET - RESPONSIVE STYLES (MOBILE-FIRST POLISH)
+   ========================================================================== */
+
+/* Large Tablets & Small Desktops (max-width: 991px) */
+@media (max-width: 991px) {
+  .header-nav {
+    background: rgba(28, 28, 28, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 0.75rem 0;
+    border-bottom: 2px solid var(--primary-gold);
+  }
+  
+  .navbar-nav {
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 0 !important;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+
+  .pricing-card.premium-tier {
+    transform: scale(1);
+    margin-bottom: 30px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+/* Medium Tablets & Mobile Landscape (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-container::after {
+    left: 18px;
+  }
+
+  .right-container {
+    left: 0%;
+  }
+
+  .right-container::after {
+    left: 18px;
+  }
+}
+
+/* Small Mobile Devices & Phones (max-width: 576px) */
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-title {
+    font-size: 1.85rem;
+  }
+  
+  .counter-box {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .counter-box:last-child {
+    border-bottom: none;
+  }
+
+  .btn-gold, .btn-maroon {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .glass-card {
+    padding: 1.5rem !important;
+  }
+
+  .contact-info-card {
+    padding: 2rem 1.5rem !important;
+  }
+
+  .footer-top {
+    padding: 3.5rem 0 2rem 0;
+  }
+
+  .scroll-indicator-container {
+    bottom: 15px;
+  }
+}
