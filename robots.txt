@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+
+# Sitemaps for Google Search Console & Bing Webmaster Tools
+Sitemap: https://bouthakuranbanquet.in/sitemap.xml
+Sitemap: https://bouthakuranbanquet.in/sitemap.txt
