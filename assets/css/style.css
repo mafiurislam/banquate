@@ -2359,6 +2359,14 @@ a {
 body.server-error-active {
   overflow: hidden !important;
   height: 100vh !important;
+  background: #0d0f12 !important;
+}
+
+/* Hide ALL website details, navbars, floating buttons, and sections when server-error-active is on */
+body.server-error-active > *:not(#serverErrorOverlay) {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .server-error-box {

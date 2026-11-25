@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
       overlay.innerHTML = `
         <div class="server-error-box">
           <div class="server-error-icon"><i class="bi bi-exclamation-octagon-fill"></i></div>
-          <div><span class="server-error-badge">HTTP 503 · Connection Interrupted</span></div>
-          <div class="server-error-title">Server Problem</div>
-          <div class="server-error-subtitle">Server Error · Loading Server...</div>
+          <div><span class="server-error-badge">HTTP 503 · Server Unavailable</span></div>
+          <div class="server-error-title">SERVER PROBLEM</div>
+          <div class="server-error-subtitle">Server Error — Loading Your Server...</div>
           <div class="server-error-loading-row">
             <span class="server-error-spinner"></span>
-            <span class="server-error-loading-text">Loading Server... Please Wait</span>
+            <span class="server-error-loading-text">Loading Your Server...</span>
           </div>
           <p class="server-error-desc">The server is currently experiencing a temporary technical problem and cannot load the page right now. Please try again later.</p>
         </div>

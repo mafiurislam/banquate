@@ -76,7 +76,22 @@
   <link href="assets/css/responsive.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="server-error-active">
+
+  <!-- TEMPORARY SERVER ERROR OVERLAY START -->
+  <div id="serverErrorOverlay" role="alert" aria-live="assertive" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#0d0f12;z-index:999999;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;color:#ffffff;font-family:system-ui,-apple-system,sans-serif;">
+    <div class="server-error-box">
+      <div class="server-error-icon"><i class="bi bi-exclamation-octagon-fill"></i></div>
+      <div><span class="server-error-badge">HTTP 503 · Server Unavailable</span></div>
+      <div class="server-error-title">SERVER PROBLEM</div>
+      <div class="server-error-subtitle">Server Error — Loading Your Server...</div>
+      <div class="server-error-loading-row">
+        <span class="server-error-spinner"></span>
+        <span class="server-error-loading-text">Loading Your Server...</span>
+      </div>
+    </div>
+  </div>
+  <!-- TEMPORARY SERVER ERROR OVERLAY END -->
 
   <!-- Scroll Progress Bar -->
   <div id="scroll-progress"></div>
@@ -584,4 +599,5 @@
 </body>
 
 </html>
+
 

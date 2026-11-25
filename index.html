@@ -293,24 +293,20 @@
 
 <body class="server-error-active">
 
-  <!-- =====================================================================
-       TEMPORARY SERVER PROBLEM / SERVER ERROR OVERLAY
-       (পরে রিমুভ করতে চাইলে এই ডিভটি ডিলিট করুন বা script.js-এ SHOW_SERVER_ERROR_OVERLAY = false করে দিন)
-       ===================================================================== -->
-  <div id="serverErrorOverlay" role="alert" aria-live="assertive">
+  <!-- TEMPORARY SERVER ERROR OVERLAY START -->
+  <div id="serverErrorOverlay" role="alert" aria-live="assertive" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#0d0f12;z-index:999999;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;color:#ffffff;font-family:system-ui,-apple-system,sans-serif;">
     <div class="server-error-box">
       <div class="server-error-icon"><i class="bi bi-exclamation-octagon-fill"></i></div>
-      <div><span class="server-error-badge">HTTP 503 · Connection Interrupted</span></div>
-      <div class="server-error-title">Server Problem</div>
-      <div class="server-error-subtitle">Server Error · Loading Server...</div>
+      <div><span class="server-error-badge">HTTP 503 · Server Unavailable</span></div>
+      <div class="server-error-title">SERVER PROBLEM</div>
+      <div class="server-error-subtitle">Server Error — Loading Your Server...</div>
       <div class="server-error-loading-row">
         <span class="server-error-spinner"></span>
-        <span class="server-error-loading-text">Loading Server... Please Wait</span>
+        <span class="server-error-loading-text">Loading Your Server...</span>
       </div>
-      <p class="server-error-desc">The server is currently experiencing a temporary technical problem and cannot load the page right now. Please try again later.</p>
     </div>
   </div>
-  <!-- ===================================================================== -->
+  <!-- TEMPORARY SERVER ERROR OVERLAY END -->
 
   <!-- Scroll Progress Bar -->
   <div id="scroll-progress"></div>
@@ -440,7 +436,8 @@
             &amp; Marriage Hall in Madhyamgram, Kolkata</h2>
           <p class="lead text-muted">Looking for a luxury <strong>marriage hall near me</strong> or the finest
             <strong>banquet hall in Madhyamgram, Kolkata</strong>? Welcome to <strong>Bou Thakurani Banquet</strong>
-            (popularly searched as <em>Bouthakurani Banquet</em>).</p>
+            (popularly searched as <em>Bouthakurani Banquet</em>).
+          </p>
           <p class="mb-4">Situated at a prime landmark location in <strong>Sisir Kunja, East Udayrajpur, Madhyamgram
               (Opposite Star Mall on Jessore Road, Kolkata - 700129)</strong>, our state-of-the-art marriage venue hall
             features <strong>two grand centralized AC floors plus a scenic open-air rooftop</strong>. Whether you want
