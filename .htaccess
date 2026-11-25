@@ -1,56 +1,9 @@
-# Hostinger & LiteSpeed High-Performance SEO Configuration
+# Hostinger Safe Configuration
 DirectoryIndex index.html index.php
-
-# Ensure proper MIME types for Google Search Console Sitemap & Robots fetching
-<IfModule mod_mime.c>
-    AddType application/xml .xml
-    AddType text/plain .txt
-    AddType application/manifest+json .json
-</IfModule>
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-
-    # Allow direct access to sitemap.xml, sitemap.txt, and robots.txt without redirection loops
-    RewriteRule ^(sitemap\.xml|sitemap\.txt|robots\.txt)$ - [L]
-
     # Redirect HTTP to HTTPS
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-</IfModule>
-
-# Correct headers for XML Sitemaps so Googlebot never fails with "Couldn't fetch"
-<IfModule mod_headers.c>
-    <FilesMatch "^sitemap\.xml$">
-        Header set Content-Type "application/xml; charset=utf-8"
-        Header set Cache-Control "no-cache, no-store, must-revalidate"
-        Header set X-Robots-Tag "noindex"
-    </FilesMatch>
-    <FilesMatch "^(sitemap\.txt|robots\.txt)$">
-        Header set Content-Type "text/plain; charset=utf-8"
-        Header set Cache-Control "no-cache, no-store, must-revalidate"
-    </FilesMatch>
-    Header set X-Content-Type-Options "nosniff"
-    Header set Referrer-Policy "strict-origin-when-cross-origin"
-    <FilesMatch "\.(jpg|jpeg|png|webp|gif|ico|css|js|woff2)$">
-        Header set Cache-Control "public, max-age=31536000, immutable"
-    </FilesMatch>
-</IfModule>
-
-# Enable GZIP / Deflate Compression for Core Web Vitals Speed
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml text/css text/javascript application/javascript application/x-javascript application/json image/svg+xml
-</IfModule>
-
-# Browser Caching for Faster Repeat Loads & PageSpeed Score
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresDefault "access plus 1 month"
-    ExpiresByType text/html "access plus 1 hour"
-    ExpiresByType text/css "access plus 1 year"
-    ExpiresByType application/javascript "access plus 1 year"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType image/x-icon "access plus 1 year"
 </IfModule>
