@@ -1,3 +1,9 @@
+// ============================================================================
+// TEMPORARY SERVER PROBLEM / SERVER ERROR SWITCH
+// পরে এই মেসেজটি সরাতে চাইলে নিচের true কে false করে দিন:
+// ============================================================================
+const SHOW_SERVER_ERROR_OVERLAY = true;
+
 // Always scroll to top on page load / refresh
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
@@ -5,6 +11,35 @@ if ('scrollRestoration' in history) {
 window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Server Problem / Server Error Overlay Handler
+  const existingServerOverlay = document.getElementById('serverErrorOverlay');
+  if (SHOW_SERVER_ERROR_OVERLAY) {
+    document.body.classList.add('server-error-active');
+    if (!existingServerOverlay) {
+      const overlay = document.createElement('div');
+      overlay.id = 'serverErrorOverlay';
+      overlay.setAttribute('role', 'alert');
+      overlay.innerHTML = `
+        <div class="server-error-box">
+          <div class="server-error-icon"><i class="bi bi-exclamation-octagon-fill"></i></div>
+          <div><span class="server-error-badge">HTTP 503 · Connection Interrupted</span></div>
+          <div class="server-error-title">Server Problem</div>
+          <div class="server-error-subtitle">Server Error · Loading Server...</div>
+          <div class="server-error-loading-row">
+            <span class="server-error-spinner"></span>
+            <span class="server-error-loading-text">Loading Server... Please Wait</span>
+          </div>
+          <p class="server-error-desc">The server is currently experiencing a temporary technical problem and cannot load the page right now. Please try again later.</p>
+        </div>
+      `;
+      document.body.prepend(overlay);
+    }
+  } else {
+    document.body.classList.remove('server-error-active');
+    if (existingServerOverlay) {
+      existingServerOverlay.remove();
+    }
+  }
   // Preloader
   const preloader = document.getElementById('preloader');
   if (preloader) {
